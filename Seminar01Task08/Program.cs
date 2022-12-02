@@ -8,12 +8,14 @@ if(inputLine!=null)                                 // проверяем, чт�
     
     string outLine = string.Empty;
 
-    while ( index < inputNumber+1)                  // цикл до (введенного числа+1), чтоб если введенное число четное, то оно попадет в строку  
+    while ( index <= inputNumber-2)                  // цикл до (введенного числа+1), чтоб если введенное число четное, то оно попадет в строку  
     {
        outLine = outLine + index + ',';             // приписываем четные числа
        index = index+2; 
     }
-    outLine = outLine.TrimEnd(',');;
+    
+    outLine = outLine + index;
+    //outLine = outLine.TrimEnd(',');
 
     Console.WriteLine(outLine);
 }
