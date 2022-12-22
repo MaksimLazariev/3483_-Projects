@@ -32,7 +32,7 @@ string DegToBin(int num)
     }
     return outBin;
 }
-// Сстемный метод конвертации
+// Системный метод конвертации
 string DecToBinNativ(int num)
 {
     return Convert.ToString(num, 2);
